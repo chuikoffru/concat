@@ -59,6 +59,7 @@ fn test_studio(path: &std::path::Path) -> super::Studio {
         height: 1080,
         rate_num: 30,
         rate_den: 1,
+        canvas: [0, 0, 0, 255],
     };
     std::fs::write(
         path.join("concat.json"),
