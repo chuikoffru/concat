@@ -108,7 +108,7 @@ fn adding_normalization_in_the_inspector_does_not_navigate() {
     assert_eq!(studio.clip("second").unwrap().filters.len(), 1);
     // Library cards still reveal the effect they add.
     studio.apply_catalogue("concat.denoise", false);
-    assert_eq!(studio.inspector_jump, (8, "Audio", "Sound"));
+    assert_eq!(studio.inspector_jump, (8, "Audio", "AudioEffects"));
 }
 
 #[allow(missing_docs)]
